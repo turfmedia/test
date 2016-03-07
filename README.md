@@ -1,6 +1,6 @@
 # Sinatra Test API – Exercise repository
 
-This is an API example running with sinatra and simple authentication, for exercise purpose.
+This is an API example running with sinatra and basic authentication, for exercise purpose.
 
 ## API Doc
 
@@ -14,7 +14,8 @@ Available on heroku: https://turfmediatest.herokuapp.com/
 
 ### Todo
 
-* Client ([RestClient](https://github.com/rest-client/rest-client))
+* JS client (Angular, react, ...)
+* Client gem ([RestClient](https://github.com/rest-client/rest-client))
 * Redis Storage
 
 With documentation, rspec or minitest test, ruby >= 2.2
@@ -31,4 +32,4 @@ With documentation, rspec or minitest test, ruby >= 2.2
 * Fork the repository
 * Send your estimation
 * Code it
-* Submit a pull request to the project owner
+* Submit a pull request

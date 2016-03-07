@@ -22,26 +22,39 @@ describe "Sinatra Webhook Server" do
     last_response.headers['Content-Type'].must_equal 'application/json'
   end
 
-  it "#create should return an id" do
+  it "should retrieve all users" do
     post '/users', {email: 'stephane.busso@gmail.com'}.to_json
+    last_response.body.must_include 'new user recorded'
+  end
+
+  it "should return a user from its id" do
+    post '/users', {email: 'stephane.busso+testget@gmail.com'}.to_json
+    id = JSON.parse(last_response.body)['user_id']
+    get "/users/#{id}"
+    last_response.body.must_include 'stephane.busso+testget@gmail.com'
+  end
+
+  it "should create a user and return an id" do
+    post '/users', {email: 'user@example.com'}.to_json
     last_response.body.must_include 'new user recorded'
     JSON.parse(last_response.body)['user_id'].must_be_instance_of Fixnum
   end
 
-  it "#update should return an id" do
-    post '/users', {email: 'stephane.busso@gmail.com'}.to_json
-    last_response.body.must_include 'new user recorded'
+  it "should update a user and return user" do
+    post '/users', {email: 'update@example.com'}.to_json
+    id = JSON.parse(last_response.body)['user_id']
+    put "/users/#{id}", {email: 'update2@example.com'}.to_json
+    last_response.body.must_include "user updated #{id}"
   end
 
-  it "#create should return an id" do
-    post '/users', {email: 'stephane.busso@gmail.com'}.to_json
-    last_response.body.must_include 'new user recorded'
+  it "should delete a user" do
+    post '/users', {email: 'delete@example.com'}.to_json
+    id = JSON.parse(last_response.body)['user_id']
+    delete "/users/#{id}"
+    last_response.body.must_include "user deleted #{id}"
   end
 
-  it "#create should return an id" do
-    post '/users', {email: 'stephane.busso@gmail.com'}.to_json
-    last_response.body.must_include 'new user recorded'
-  end
+
 
 
 end

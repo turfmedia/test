@@ -10,6 +10,8 @@ Basic HTTP Authorization with API_KEY.
 
 ### Input (request JSON body)
 
+Any information provided in the body will be stored for the user. Like for example:
+
 Name | Type | Description
 -----|------|--------------
 `email`|`string` | user email.
@@ -23,7 +25,7 @@ Name | Type | Description
 }
 ```
 
-## Retrieve users
+## Retrieve all users
 
     GET /users
 
@@ -39,15 +41,25 @@ Name | Type | Description
 }
 ```
 
+## Retrieve user
+
+    GET /users/<em>:id</em>
+
+### Response
+
+``` json
+{
+  "email": "admin@example.com"
+}
+```
+
 ## Update user
 
     UPDATE /users/<em>:id</em>
 
 ### Input (request JSON body)
 
-Name | Type | Description
------|------|--------------
-`name`|`type` | Description.
+Any information provided in the body will be stored for the user.
 
 ### Response
 
