@@ -1,5 +1,5 @@
-ENV['RACK_ENV'] = 'test'
-require 'minitest/autorun'
+
+require_relative 'test_helper.rb'
 require 'rack/test'
 require 'json'
 require_relative '../lib/server.rb'
