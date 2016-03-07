@@ -4,11 +4,24 @@
 
     POST /users
 
-### Parameters
+### Input (request JSON body)
 
 Name | Type | Description
 -----|------|--------------
 `name`|`type` | Description.
+
+### Response
+
+``` json
+{
+  "text": "Hello world github/linguist#1 **cool**, and #1!",
+  "mode": "gfm"
+}
+```
+
+## Retrieve users
+
+    GET /users
 
 ### Input (request JSON body)
 
@@ -21,41 +34,14 @@ Name | Type | Description
 ``` json
 {
   "text": "Hello world github/linguist#1 **cool**, and #1!",
-  "mode": "gfm",
-  "context": "github/gollum"
+  "mode": "gfm"
 }
 ```
-
-## Retrieve users
-
-    GET /users
-
-### Parameters
-
-Name | Type | Description
------|------|--------------
-`name`|`type` | Description.
-
-### Input (request JSON body)
-
-Name | Type | Description
------|------|--------------
-`name`|`type` | Description.
-
-### Response
-
-<%= json :user %>
 
 ## Update user
 
     UPDATE /users
 
-### Parameters
-
-Name | Type | Description
------|------|--------------
-`name`|`type` | Description.
-
 ### Input (request JSON body)
 
 Name | Type | Description
@@ -64,24 +50,28 @@ Name | Type | Description
 
 ### Response
 
-<%= json :user %>
+``` json
+{
+  "text": "Hello world github/linguist#1 **cool**, and #1!",
+  "context": "github/gollum"
+}
+```
 
 ## Delete user
 
-    DELETE /users
+    DELETE /users/<em>:id</em>
 
 ### Parameters
 
 Name | Type | Description
 -----|------|--------------
-`name`|`type` | Description.
-
-### Input (request JSON body)
-
-Name | Type | Description
------|------|--------------
-`name`|`type` | Description.
+`id`|`integer` | Description.
 
 ### Response
 
-<%= json :user %>
+``` json
+{
+  "text": "Hello world github/linguist#1 **cool**, and #1!",
+  "context": "github/gollum"
+}
+```

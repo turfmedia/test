@@ -17,7 +17,7 @@ $ rake test
 
 ## Heroku
 
-Avaialble on heroku: https://turfmediatest.herokuapp.com/
+Available on heroku: https://turfmediatest.herokuapp.com/
 
 ## Exercises
 
