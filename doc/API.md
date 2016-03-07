@@ -8,14 +8,14 @@
 
 Name | Type | Description
 -----|------|--------------
-`name`|`type` | Description.
+`email`|`string` | user email.
 
 ### Response
 
 ``` json
 {
-  "text": "Hello world github/linguist#1 **cool**, and #1!",
-  "mode": "gfm"
+  "message": "new user recorded 1",
+  "user_id": 1
 }
 ```
 
@@ -23,24 +23,21 @@ Name | Type | Description
 
     GET /users
 
-### Input (request JSON body)
-
-Name | Type | Description
------|------|--------------
-`name`|`type` | Description.
-
 ### Response
 
 ``` json
 {
-  "text": "Hello world github/linguist#1 **cool**, and #1!",
-  "mode": "gfm"
+  "users": {
+    "1": {
+      "email": "admin@example.com"
+    }
+  }
 }
 ```
 
 ## Update user
 
-    UPDATE /users
+    UPDATE /users/<em>:id</em>
 
 ### Input (request JSON body)
 

@@ -25,3 +25,10 @@ With documentation, rspec or minitest test, ruby >= 2.2
 2. [ ] Effort Estimation
 3. [ ] Realisation (test, code, documentation)
 4. [ ] Demonstration
+
+### How To
+
+* Fork the repository
+* Send your estimation
+* Code it
+* Submit a pull request to the project owner
