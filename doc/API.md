@@ -65,8 +65,8 @@ Any information provided in the body will be stored for the user.
 
 ``` json
 {
-  "text": "Hello world github/linguist#1 **cool**, and #1!",
-  "context": "github/gollum"
+  "message": "user updated 1",
+  "user_id": 1
 }
 ```
 
@@ -84,7 +84,7 @@ Name | Type | Description
 
 ``` json
 {
-  "text": "Hello world github/linguist#1 **cool**, and #1!",
-  "context": "github/gollum"
+  "message": "user deleted 1",
+  "user_id": 1
 }
 ```
