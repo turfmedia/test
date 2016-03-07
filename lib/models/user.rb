@@ -4,6 +4,7 @@
 class User
   @@_id = 0
   @@_users = {}
+  
   class << self
     def init
       @@_id = 0
