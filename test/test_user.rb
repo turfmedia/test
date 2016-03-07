@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'user.rb'
+require_relative '../lib/models/user.rb'
 
 
 describe User do

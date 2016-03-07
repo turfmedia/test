@@ -2,7 +2,7 @@ ENV['RACK_ENV'] = 'test'
 require 'minitest/autorun'
 require 'rack/test'
 require 'json'
-require_relative 'server.rb'
+require_relative '../lib/server.rb'
 
 include Rack::Test::Methods
 

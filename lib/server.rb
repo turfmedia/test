@@ -2,7 +2,7 @@
 
 require 'sinatra'
 require 'json'
-require_relative 'user'
+require_relative 'models/user'
 
 configure do
   # authorization
