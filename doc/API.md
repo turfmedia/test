@@ -1,5 +1,9 @@
 # User API
 
+## Authorization
+
+Basic HTTP Authorization with API_KEY.
+
 ## Create a user
 
     POST /users
