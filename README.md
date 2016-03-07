@@ -1,7 +1,5 @@
 # Sinatra Test API – Exercise repository
 
-{:toc}
-
 ## Purpose
 
 This is a small example of an API running with sinatra and simple authentication, for exercise purpose.
@@ -31,6 +29,7 @@ Features to be developed:
 Test with rspec or minitest, ruby >= 2.2
 
 Tasks:
+
 1. Breakown
 2. Estimation
 3. Realisation
