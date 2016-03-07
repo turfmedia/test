@@ -6,6 +6,10 @@
 
 This is a small example of an API running with sinatra and simple authentication, for exercise purpose.
 
+## API Doc
+
+[Documentation](doc/API.md)
+
 ## Test
 
 ``` command-line
