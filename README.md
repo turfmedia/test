@@ -14,8 +14,8 @@ Available on heroku: https://turfmediatest.herokuapp.com/
 
 ### Todo
 
-* JS client (Angular, react, ...)
-* Client gem ([RestClient](https://github.com/rest-client/rest-client))
+* JS client (Angular or react or ...)
+* API Client as a gem (using [RestClient](https://github.com/rest-client/rest-client) or other of your choice)
 * Redis Storage
 
 With documentation, rspec or minitest test, ruby >= 2.2
