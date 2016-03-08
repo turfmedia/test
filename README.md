@@ -1,28 +1,35 @@
-# Ruby Client Test
+# Sinatra Test API – Exercise repository
 
-This is an ruby client app for api test.
+This is an API example running with sinatra and basic authentication, for exercise purpose.
 
-## Start API Server 
+## API Doc
 
-		ruby lib/server.rb
+[Documentation](doc/API.md)
 
-## Create a user
+## Heroku
 
-		ruby client/post_user.rb	 
+Available on heroku: https://turfmediatest.herokuapp.com/
 
-## Retrieve a user
+## Exercises
 
-		ruby client/retrieve_user.rb
+### Todo
 
-## Retreive all users
+* JS client (Angular or react or ...)
+* API Client as a gem (using [RestClient](https://github.com/rest-client/rest-client) or other of your choice)
+* Redis Storage
 
-		ruby client/retrieve_users.rb
+With documentation, rspec or minitest test, ruby >= 2.2
 
-## Update a user
+### Tasks
 
-		ruby client/update_user.rb
+1. [ ] Task Breakdown
+2. [ ] Effort Estimation
+3. [ ] Realisation (test, code, documentation)
+4. [ ] Demonstration
 
-## Delete a user
+### How To
 
-		ruby client/delete_user.rb	 								
-
+* Fork the repository
+* Send your estimation
+* Code it
+* Submit a pull request
