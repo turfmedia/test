@@ -25,8 +25,6 @@ This is an API example running with sinatra and basic authentication.
 
 [Documentation](doc/API.md)
 
-## Deployment Heroku
-
 Available on heroku: https://turfmediatest.herokuapp.com/
 
 ## How To
