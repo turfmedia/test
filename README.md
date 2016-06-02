@@ -16,7 +16,7 @@ Code should be delivered With documentation, rspec or minitest test, ruby >= 2.2
 
 1. [ ] Technical Tasks Breakdown
 2. [ ] Effort Estimation
-3. [ ] Realisation Of 1 Todo (test, code, documentation)
+3. [ ] Realisation of 1 Todo (test, code, documentation)
 4. [ ] Demonstration
 
 ## API Doc
