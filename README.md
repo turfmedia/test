@@ -2,7 +2,7 @@
 
 ## Exercise
 
-This repository is for test only. It contains a simple API coded with Sinatra. There is a documentation and a coding todo list. First task is to read infromation, and give an estimation of tasks breakdown.
+This repository is for test only. It contains a simple API coded with Sinatra. There is a documentation and a coding todo list. First task is to read information, and give an estimation of tasks breakdown.
 
 ### Coding Todo
 
@@ -14,9 +14,9 @@ Code should be delivered With documentation, rspec or minitest test, ruby >= 2.2
 
 ### Your Tasks
 
-1. [ ] Technical Tasks Breakdown
-2. [ ] Effort Estimation
-3. [ ] Realisation of 1 Todo (test, code, documentation)
+1. [ ] Technical Tasks Breakdown of all Todos
+2. [ ] Effort Estimation of all Todos
+3. [ ] Production of 1 Todo (including test, code, documentation)
 4. [ ] Demonstration
 
 ## API Doc
@@ -31,5 +31,5 @@ Available on heroku: https://turfmediatest.herokuapp.com/
 
 * Fork the repository
 * Send your estimation
-* Code it
+* Go through tasks
 * Submit a pull request
